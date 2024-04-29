@@ -8,7 +8,7 @@ This is a program, **NOT** a resource pack!
 Since Sodium does not support vanilla resource pack shaders, paintings may lose transparency when Sodium is installed.
 
 ## Usage
-1. Join Hypixel Cops and Crime lobby and wait for the resource pack to be downloaded;
+1. Join Hypixel Cops and Crims lobby and wait for the resource pack to be downloaded;
 2. Start the patch program;
 3. Enter .minecraft folder path, or use the default value;
 4. Enter output resource pack name, or use the default value;
