@@ -1,5 +1,5 @@
 # HypCopsCrimsResPackFixer
-A patcher to fix Hypixel Cops and Crime resource pack on high versions of Minecraft.
+A patcher to fix Hypixel Cops and Crims resource pack on high versions of Minecraft.
 
 ## Notice
 This is a program, **NOT** a resource pack!
