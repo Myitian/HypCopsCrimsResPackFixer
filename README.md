@@ -21,7 +21,7 @@ Since Sodium mod does not support vanilla resource pack shaders, paintings may l
 5. When the program outputs "Done!" and exits, you can find a new resource pack in `.minecraft/resourcepacks` folder;
 6. Enable the resource pack in game;
 7. Now the font and paintings should display correctly.
-
+---
 1. 加入 Hypixel 警匪大战大厅并等待资源包下载；
 2. 启动修补程序；
 3. 输入 .minecraft 文件夹路径，或使用默认值；
