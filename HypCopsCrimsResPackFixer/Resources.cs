@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.Immutable;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Immutable;
 
 namespace HypCopsCrimsResPackFixer
 {
@@ -23,11 +18,13 @@ namespace HypCopsCrimsResPackFixer
         public const string McmetaPath = "pack.mcmeta";
         public const string LegacyPaintingPath = "assets/minecraft/textures/painting/paintings_kristoffer_zetterstrand.png";
         public const string LegacyFontPath = "assets/minecraft/mcpatcher/font/unicode_page_92.png";
+        public const string ClownfishTexturePath = "assets/minecraft/textures/item/clownfish.png";
         public const string DefaultPackName = "HypCopsCrims_Patch.zip";
         public const string ShaderPath = "assets/minecraft/shaders/core/rendertype_entity_solid.fsh";
         public const string PaintingBackPath = "assets/minecraft/textures/painting/back.png";
         public const string PaintingPath = "assets/minecraft/textures/painting/{0}.png";
         public const string FontPath = "assets/minecraft/textures/mcpatcher.png";
+        public const string TropicalFishTexturePath = "assets/minecraft/textures/item/tropical_fish.png";
         public const string FontDefaultJsonPath = "assets/minecraft/font/default.json";
         public const string FontUniformJsonPath = "assets/minecraft/font/uniform.json";
 

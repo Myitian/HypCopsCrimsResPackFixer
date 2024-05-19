@@ -1,6 +1,4 @@
 ﻿using BigGustave;
-using HypCopsCrimsResPackFixer;
-using System.Collections.Immutable;
 using System.Drawing;
 using System.IO.Compression;
 
@@ -31,7 +29,7 @@ class Program
             {
                 continue;
             }
-            ZipArchiveEntry? mcmeta = null, painting = null, font = null;
+            ZipArchiveEntry? mcmeta = null, painting = null, font = null, clownfish = null;
             foreach (ZipArchiveEntry entry in zip.Entries)
             {
                 switch (entry.FullName)
@@ -44,6 +42,9 @@ class Program
                         break;
                     case Resources.LegacyFontPath:
                         font = entry;
+                        break;
+                    case Resources.ClownfishTexturePath:
+                        clownfish = entry;
                         break;
                 }
             }
@@ -151,6 +152,13 @@ class Program
                 ZipArchiveEntry targetUniformJson = patcher.CreateEntry(Resources.FontUniformJsonPath);
                 using (Stream s = targetUniformJson.Open())
                     s.Write(res.FontUniformJson);
+            }
+            if (clownfish is not null)
+            {
+                ZipArchiveEntry e = patcher.CreateEntry(Resources.TropicalFishTexturePath);
+                using Stream s = clownfish.Open();
+                using Stream t = e.Open();
+                s.CopyTo(t);
             }
             zip?.Dispose();
             Console.Error.WriteLine(Resources.MessageDone);
